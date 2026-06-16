@@ -1,0 +1,25 @@
+# TA Tool configuration — copy to ta_config.toml or ~/.ta_config.toml
+
+# Response tone: "friendly" | "formal" | "strict"
+tone = "friendly"
+
+# Grading strictness: "low" | "medium" | "high"
+strictness = "medium"
+
+# Rubric style hint passed to the LLM
+grading_style = "standard"
+
+# LLM provider: "anthropic" | "openai" | "stub"
+llm_provider = "anthropic"
+
+# Model ID — matches the selected provider
+model = "claude-sonnet-4-6"
+
+# Cache TTL in seconds (0 to disable)
+cache_ttl = 3600
+
+# Local directory for response cache
+cache_dir = "~/.ta_cache"
+
+# Max tokens per LLM response
+max_tokens = 4096
